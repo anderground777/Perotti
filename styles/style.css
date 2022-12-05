@@ -1,3 +1,127 @@
+:root {
+    --color_1: #83C2D5;    
+    --color_2: #D6AA45;    
+    --color_3: #5FA1A6;
+}
+/* common */
 *{
-     
+    box-sizing: border-box;  
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: ;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* layout */
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header {
+    border-bottom: 1px solid #83C2D5;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 5px;
+}
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+}
+
+.mainmenu {
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  .mainmenu__item a {
+    color: black;
+    text-decoration: none;
+}
+
+  .mainmenu__item a::before, .mainmenu__item a::after {
+    content: '';
+    display: block;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color_1);
+    transition: width 0.2s ease-out;
+  }
+
+  .mainmenu__item a:hover::after, .mainmenu__item a:hover::before {
+    width: 80%;
+  }
+
+  .mainmenu__item {
+    margin-right: 80px;
+  }
+
+  .mainmenu__item:last-child {
+    margin-right: 0;
+  }
+
+  .header__social a {
+    margin-right: 70px;
+  }
+
+  .header__social a:last-child {
+    margin-right: 0;
+  }
+
+  .social__link {
+    color: var(--color_1);
+  }
+
+  .social__link svg:hover {
+    fill: #D6AA45;    
+  }
+
+  /* mainbanner */
+.mainbanner {
+    background-image: url(../images/fill_mainbanner.jpg);
+    background-size: 100%;
+}
+
+.mainbanner__head {
+    font-family: 'PT Sans';
+    font-size: 3em;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 360px;
+    margin-left: 54px;
+}
+
+.mainbanner__description {
+    
+}
+
+.mainbanner__head span {
+    color: var(--color_3);
+}
+
+.mainbanner__text {
+    width: 560px;
+    text-transform: uppercase;
 }
