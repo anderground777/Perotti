@@ -7,7 +7,7 @@
     <title>Светлана Перотти</title>
 
     <!-- подключаем шрифты -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Raleway:wght@300;400;600;800&display=swap" rel="stylesheet">
 
     <!-- подключаем стили -->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -74,7 +74,7 @@
 
                         <p class="page-life__paragraph">Поворотным моментом, сформировавшим ее подход к творчеству как к паломничеству к себе, стало путешествие в Гималаи. Возвращаясь в Индию снова и снова, Светлана открыла для себя новые законы восприятия и построения картины, а также заинтересовалась восточным видением обучения искусству. В 2001 году в Гималаях недалеко от усадьбы русского художника Н. Рериха состоялась встреча Светланы и ее мужа Федерико Перотти, которая открыла новую страничку в их биографии.</p>
                     </div>    
-                    <a href="" class="button button--sm">Галерея работ</a>
+                    <a href="" class="button button--blue">Галерея работ</a>
                 </div>
                 <img src="images/page-life-2.jpg" alt="Светлана Перотти">
             </div>
@@ -102,33 +102,41 @@
         </div>
     </section>
     <section class="location">
-        <h2 class="head-regular">ГДЕ НАЙТИ ВДОХНОВЕНИЕ</h2>
-        <div class="container">
+        <h2 class="head-regular line--through">где найти вдохновение</h2>
+        <div class="container d-flex">
             <div class="location__left">
                 <div class="location__text-item">
-                    <p>Школа Искусств Перотти на Динамо</p>
-                    <p>Москва, ул. Расковой, дом 16/18 (метро Белорусская/Динамо)</p>
+                    <p class="location__head" >Школа Искусств Перотти на Динамо</p>
+                    <div class="wraper d-flex">
+                        <img src="images/pointer.svg" class="img--pointer" alt="pointer">
+                        <p class="location__text" >Москва, ул. Расковой, дом 16/18 (метро Белорусская/Динамо)</p>
+                    </div>    
                 </div>
                 <div class="location__text-item">
-                    <p>Школа Искусств Перотти на Юго-Западе</p>
-                    <p>Москва, ул. Никулинская дом 6, корп. 3 (метро Юго-Западная)</p>
+                    <p class="location__head">Школа Искусств Перотти на Юго-Западе</p>
+                    <div class="wraper d-flex">
+                        <img src="images/pointer.svg"  class="img--pointer" alt="pointer">
+                        <p class="location__text">Москва, ул. Никулинская дом 6, корп. 3 (метро Юго-Западная)</p>
+                    </div>    
                 </div>
                 <div class="location__text-item">
-                    <p>Оставьте заявку на обучение или можете продолжить знакомиться с нами!</p>
+                    <p class="location__text">Оставьте заявку на обучение или можете продолжить знакомиться с нами!</p>
                 </div>
-                <a href="" class="button">Оставить заявку</a>
+                <a href="" class="button button--white">Оставить заявку</a>
             </div>
             <div class="location__map">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5606537ba996dcb18ecf56a10bbbe05c79045da405f73ad3a9e88a4cab90cf71&amp;source=constructor" width="600" height="450" frameborder="0"></iframe>               
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7bf3dc5ba36fe83866f45ccd90815dcaa5906c6788284faa28fc96d8bc386268&amp;source=constructor" width="696" height="500" frameborder="0"></iframe>          
             </div> 
         </div>
     </section>
     <section class="acquaintance">
-        <h2 class="head-regular">Продолжаем знакомство</h2>
-        <div class="acquaintance__actions">
-            <a href="#" class="button">Подробнее о школе</a>
-            <a href="#" class="button">Галерея работ</a>
-            <a href="#" class="button">Арт-клуб Перотти</a>
+        <div class="container">
+            <h2 class="head-regular">Продолжаем знакомство</h2>
+            <div class="acquaintance__actions d-flex">
+                <a href="#" class="button button--blue">Подробнее о школе</a>
+                <a href="#" class="button button--blue">Галерея работ</a>
+                <a href="#" class="button button--blue">Арт-клуб Перотти</a>
+            </div>
         </div>
     </section>
     <footer class="footer">
