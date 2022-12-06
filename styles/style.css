@@ -3,7 +3,7 @@
     --color_2: #D6AA45;    
     --color_3: #5FA1A6;
     --color-white: #ffffff;
-    --color-black: #404040;
+    --color-black: #111111;
     --color-gray: #E3E3E3;
 }
 /* common */
@@ -53,7 +53,7 @@
   text-decoration: none;
   padding: 0 40px;
   font-size: 16px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   font-weight: 800;
   text-transform: uppercase;
   cursor: pointer;
@@ -85,9 +85,6 @@
   border: 5px solid var(--color_3);
 }
 
-
-
-
 /* header */
 
 .header {
@@ -95,6 +92,7 @@
     box-shadow: 0px 3px 5px 0px rgba(71, 71, 71, 0.25);
     margin-bottom: 5px;
 }
+
 .header__row {
     display: flex;
     justify-content: space-between;
@@ -288,8 +286,9 @@ h1 {
 }
 
 .location__left {
-  margin-left: 105px;
-  margin-right: 26px;
+    display: grid;
+    margin-left: 105px;
+    margin-right: 26px;
 }
 
 .location__text-item:nth-child(2), .location__text-item:first-child {
