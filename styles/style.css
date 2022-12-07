@@ -132,8 +132,8 @@
 
 .header {
     /* border-bottom: 1px solid #83C2D5; */
-    box-shadow: 0px 3px 5px 0px rgba(71, 71, 71, 0.25);
-    margin-bottom: 5px;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .5);
+    margin-bottom: 4px;
 }
 
 .header__row {
