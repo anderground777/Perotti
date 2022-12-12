@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Политика обработки персональных данных</title>
 
-    <!-- подключаем шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Raleway:wght@300;400;600;800&display=swap" rel="stylesheet">
-
+    
     <!-- подключаем стили -->
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="styles/button.css">
 </head>
-<body>
+<body class="body">
     <header class="header">
+        <div class="container">
             <nav class="menu">
                 <div class="top-menu">
                     <div class="top-menu__left">
@@ -42,6 +43,8 @@
                     </div>
                 </div>
             </nav>
+        </div>
+    </header>       
     <section class="privacy">
         <div class="container">
         <h2>Политика в отношении обработки персональных данных.</h2>
@@ -190,7 +193,9 @@
             </div>
             <div class="footer__item item-form">
                 <p>Если у Вас есть вопросы или предложения вы можете написать нам</p>
-                <button>Написать нам</button>
+                <div class="button-send">
+                    <a href="" class="button-send__action">Написать нам</a>
+                </div>
             </div>
         </div>
     </footer>

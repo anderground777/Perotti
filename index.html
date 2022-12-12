@@ -12,11 +12,12 @@
     <!-- подключаем стили -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/button.css">
 
 </head> 
 <body class="body">
     <header class="header">
-        <!-- <div class="container header__row"> -->
+        <div class="container">
             <nav class="menu">
                 <div class="top-menu">
                     <div class="top-menu__left">
@@ -168,7 +169,7 @@
                 <div class="location__text-item">
                     <p class="location__text">Оставьте заявку на обучение или можете продолжить знакомиться с нами</p>
                 </div>
-                <a href="" class="button button--white">Оставить заявку</a>
+                <a href="" class="push__nonaction">Оставить заявку</a>
             </div>
             <div class="location__map">
                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7bf3dc5ba36fe83866f45ccd90815dcaa5906c6788284faa28fc96d8bc386268&amp;source=constructor" width="696" height="500" frameborder="0"></iframe>          
@@ -180,10 +181,10 @@
             <span>Продолжаем знакомство</span>
         </div>
         <div class="container">       
-            <div class="acquaintance__actions d-flex">
-                <a href="#" class="button button--blue">Подробнее о школе</a>
-                <a href="#" class="button button--blue">Галерея работ</a>
-                <a href="#" class="button button--blue">Арт-клуб Перотти</a>
+            <div class="button-send d-flex button-block">
+                <a href="#" class="button__nonaction">Подробнее о школе</a>
+                <a href="#" class="button__nonaction">Галерея работ</a>
+                <a href="#" class="button__nonaction">Арт-клуб Перотти</a>
             </div>
         </div>
     </section>
@@ -211,7 +212,9 @@
             </div>
             <div class="footer__item item-form">
                 <p>Если у Вас есть вопросы или предложения вы можете написать нам</p>
-                <button>Написать нам</button>
+                <div class="button-send">
+                    <a href="" class="button-send__action">Написать нам</a>
+                </div>
             </div>
         </div>
     </footer>

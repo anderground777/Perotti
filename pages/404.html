@@ -11,38 +11,42 @@
 
     <!-- подключаем стили -->
     <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/button.css">
     <link rel="stylesheet" href="../styles/style.css">
+    
 </head>
-<body>
-    <header>
-        <nav class="menu">
-            <div class="top-menu">
-                <div class="top-menu__left">
-                    <ul class="menu-left">
-                        <li class="menu-left__item"><a href="">Обо мне</a></li>
-                        <li class="menu-left__item"><a href="">Галерея</a></li>
-                        <li class="menu-left__item"><a href="">Арт - клуб</a></li>
-                        <li class="menu-left__item"><a href="">Школа</a></li>
-                        <li class="menu-left__item"><a href="">Контакты</a></li>
-                    </ul>
+<body class="body">
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <div class="top-menu">
+                    <div class="top-menu__left">
+                        <ul class="menu-left">
+                            <li class="menu-left__item"><a href="">Обо мне</a></li>
+                            <li class="menu-left__item"><a href="">Галерея</a></li>
+                            <li class="menu-left__item"><a href="">Арт - клуб</a></li>
+                            <li class="menu-left__item"><a href="">Школа</a></li>
+                            <li class="menu-left__item"><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="top-menu__right">
+                        <div class="menu-right telegram">
+                            <a href="https://telegram.org" class="tooltip-telegram"><img src="img/telegram.svg" alt=""></a>
+                            <span class="icon">Telegram</span>
+                        </div>
+                        <div class="menu-right youtube">
+                            <a href="https://www.youtube.com/@perottischool" class="tooltip-youtube"> <img src="img/youtube.svg" alt=""></a>
+                            <span class="icon">YouTube</span>
+                        </div>
+                        <div class="menu-right instagram">
+                            <a href="https://www.instagram.com" class="tooltip-instagram"> <img src="img/instagram.svg" alt=""></a>
+                            <span class="icon">Instagram</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="top-menu__right">
-                    <div class="menu-right telegram">
-                        <a href="https://telegram.org" class="tooltip-telegram"> <img src="img/telegram.svg" alt=""></a>
-                        <span class="icon">Telegram</span>
-                    </div>
-                    <div class="menu-right youtube">
-                        <a href="https://www.youtube.com/@perottischool" class="tooltip-youtube"> <img src="img/youtube.svg" alt=""></a>
-                        <span class="icon">YouTube</span>
-                    </div>
-                    <div class="menu-right instagram">
-                        <a href="https://www.instagram.com" class="tooltip-instagram"> <img src="img/instagram.svg" alt=""></a>
-                        <span class="icon">Instagram</span>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </div>
+    </header>        
 
     <div class="block__404">
         <h2 class="head--404">404</h2>
@@ -74,7 +78,9 @@
             </div>
             <div class="footer__item item-form">
                 <p>Если у Вас есть вопросы или предложения вы можете написать нам</p>
-                <button>Написать нам</button>
+                <div class="button-send">
+                    <a href="" class="button-send__action">Написать нам</a>
+                </div>
             </div>
         </div>
     </footer>
