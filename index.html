@@ -12,6 +12,7 @@
     <!-- подключаем стили -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/button.css">
 
 </head> 
@@ -22,24 +23,24 @@
                 <div class="top-menu">
                     <div class="top-menu__left">
                         <ul class="menu-left">
-                            <li class="menu-left__item"><a href="">Обо мне</a></li>
-                            <li class="menu-left__item"><a href="">Галерея</a></li>
+                            <li class="menu-left__item"><a href="index.html">Обо мне</a></li>
+                            <li class="menu-left__item"><a href="pages/gallary.html">Галерея</a></li>
                             <li class="menu-left__item"><a href="pages/courses.html">Арт - клуб</a></li>
-                            <li class="menu-left__item"><a href="">Школа</a></li>
+                            <li class="menu-left__item"><a href="https://www.perottischool.ru/" target="_blank">Школа</a></li>
                             <li class="menu-left__item"><a href="">Контакты</a></li>
                         </ul>
                     </div>
                     <div class="top-menu__right">
                         <div class="menu-right telegram">
-                            <a href="https://telegram.org" class="tooltip-telegram"> <img src="images/telegram.svg" alt=""></a>
+                            <a href="https://telegram.org" class="tooltip-telegram" target="_blank"> <img src="images/telegram.svg" alt=""></a>
                             <span class="icon">Telegram</span>
                         </div>
                         <div class="menu-right youtube">
-                            <a href="https://www.youtube.com/@perottischool" class="tooltip-youtube"> <img src="images/youtube.svg" alt=""></a>
+                            <a href="https://www.youtube.com/@perottischool" class="tooltip-youtube" target="_blank"> <img src="images/youtube.svg" alt=""></a>
                             <span class="icon">YouTube</span>
                         </div>
                         <div class="menu-right instagram">
-                            <a href="https://www.instagram.com" class="tooltip-instagram"> <img src="images/instagram.svg" alt=""></a>
+                            <a href="https://www.instagram.com" class="tooltip-instagram" target="_blank"> <img src="images/instagram.svg" alt=""></a>
                             <span class="icon">Instagram</span>
                         </div>
                     </div>
@@ -57,7 +58,7 @@
             <img src="images/mainbanner-right.jpg" class="mainbanner__img" alt="Светлана Перотти">
         </div>
     </section>
-    <section class="page-life">
+    <section class="page-life" id="aboutme">
         <div class="container">
             <div class="page-life__block d-flex">
                 <img src="images/page-life-1.jpg" alt="Светлана Перотти">
@@ -75,8 +76,11 @@
                         <p class="page-life__paragraph">Уже с первых шагов обучения живописи профессорами был отмечен необычный колористический талант Светланы Перотти. Преподавателями Светланы в МГАХИ были такие знаменитые живописцы, как Р. Лебедева, Н. Меркушев, а также легендарный художник русского театра М. М. Курилко-Рюмин, которые оказали серьезное влияние на формирование уникального творческого стиля Перотти. После окончания института Светлана Перотти не только занималась живописью, но и работала как художник-постановщик в московских и зарубежных театрах. С большим успехом было проведено несколько персональных выставок в Москве, далее последовали выставки в Голландии, США, Германии и Италии.</p>
 
                         <p class="page-life__paragraph">Поворотным моментом, сформировавшим ее подход к творчеству как к паломничеству к себе, стало путешествие в Гималаи. Возвращаясь в Индию снова и снова, Светлана открыла для себя новые законы восприятия и построения картины, а также заинтересовалась восточным видением обучения искусству. В 2001 году в Гималаях недалеко от усадьбы русского художника Н. Рериха состоялась встреча Светланы и ее мужа Федерико Перотти, которая открыла новую страничку в их биографии.</p>
-                    </div>    
-                    <a href="" class="button button--blue">Галерея работ</a>
+                    </div>
+                    <div class="button-line">
+                        <a href="pages/gallary.html" class="button__nonaction">Галерея работ</a>
+                        <span class="button__action"></span>
+                    </div>                      
                 </div>
                 <img src="images/page-life-2.jpg" alt="Светлана Перотти">
             </div>
@@ -120,7 +124,7 @@
         </div>   
         
     </section>
-    <section class="location">
+    <section class="location" id="location">
         <div class="header--line">
             <span>где найти вдохновение</span>
         </div>
@@ -156,25 +160,35 @@
         </div>
         <div class="container">       
             <div class="button-send d-flex button-block">
-                <a href="#" class="button__nonaction">Подробнее о школе</a>
-                <a href="#" class="button__nonaction">Галерея работ</a>
-                <a href="#" class="button__nonaction">Арт-клуб Перотти</a>
+                <div class="button-line acquaintance__actions">
+                    <a href="https://www.perottischool.ru/o-shkole/" class="button__nonaction" target="_blank">Подробнее о школе</a>
+                    <span class="button__action"></span>
+                </div>
+                <div class="button-line acquaintance__actions">
+                    <a href="pages/gallary.html#gallary" class="button__nonaction" >Галерея работ</a>
+                    <span class="button__action"></span>
+                </div>
+                <div class="button-line acquaintance__actions">
+                    <a href="pages/courses.html" class="button__nonaction">Арт-клуб Перотти</a>
+                    <span class="button__action"></span>
+                </div>           
+                
             </div>
         </div>
     </section>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer__item">
-                <a href="">Работы</a>
+                <a href="pages/gallary.html#gallary">Работы</a>
                 <a href="">Услуги</a>
-                <a href="">Обо мне</a>
-                <a href="">Как добраться</a>
+                <a href="index.html#aboutme">Обо мне</a>
+                <a href="index.html#location">Как добраться</a>
             </div>
             <div class="footer__item">
                 <a href="">8 800 800 800</a>
                 <a href="">Telegram</a>
-                <a href="">VKontakte</a>
-                <a href="">WhatsApp</a>
+                <a href="">YouTube</a>
+                <a href="">Instagram</a>
             </div>
             <div class="footer__item item-location">
                 <h3>Школа Искусств Перотти на Динамо</h3>

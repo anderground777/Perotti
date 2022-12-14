@@ -1,15 +1,9 @@
-.container-button {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 100px;
-    margin-left: 100px;
-}
-
 .button-line {
     position: relative;
     /* margin: 0; */
     padding: 0;
     width: 220px;
+    font-weight: 600;
 }
 
 .button__nonaction {
@@ -48,7 +42,6 @@
     width: 44px;
     height: 10px;
     border-radius: 20px;
-    /* background-color: #83C2D5; */
     opacity: 0;
     transition: all 0.7s;
     z-index: -999;
@@ -103,9 +96,7 @@
     list-style: none;
     text-transform: uppercase;
     transition: all 0.3s;
-    text-align: center;
-    
-    
+    text-align: center;    
 }
 
 .push__nonaction:hover {
@@ -150,7 +141,6 @@
 
 .button-send {
     position: relative;
-    /* margin: 0; */
     padding: 0;
 }
 
@@ -174,7 +164,6 @@
 
 .button-send__action:hover {
     background-color: #C19A3F;
-    color: white;
 }
 
 .button-acquaintance {
