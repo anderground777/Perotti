@@ -274,45 +274,7 @@ a {
     margin-top: 100px;
   }
   
-  /* .gallary__line {
-    overflow: hidden;
-    text-align: center;
-    margin-top: 100px;
-  } */
   
-  /* .gallary__line span {
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 31px;
-    text-align: center;
-    color: #050505;
-  } */
-  
-  /* .gallary__line:before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    height: 1px;
-    background-color: var(--color_1);
-    position: relative;
-    margin-left: -100%;
-    left: -20px;
-  } */
-  
-  /* .gallary__line:after {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    height: 1px;
-    background-color: var(--color_1);
-    position: relative;
-    margin-right: -100%;
-    right: -20px;
-  } */
 
   .gallary__wrap {
     position: relative;
@@ -350,17 +312,19 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 139px;
+    margin-top: 100px;
     margin-left: 150px;
     row-gap: 15px;
 }
 
 .gallary__item-one img {
     transition: 1s;
+   
 }
 
 .gallary__item-one img:hover {
-    transform: scale(1.9);
+    transform: scale(1.7);
+    z-index: 2;
 }
 
 
@@ -413,7 +377,8 @@ a {
 }
 
 .gallary__item-two img:hover {
-    transform: scale(1.9);
+    transform: scale(1.7);
+    z-index: 2;
 }
 
 /*Работы в стиле импрессионизм*/
@@ -466,7 +431,8 @@ a {
 }
 
 .gallary__item-three img:hover {
-    transform: scale(1.9);
+    transform: scale(1.7);
+    z-index: 2;
 }
 
 /*Как нас найти*/
