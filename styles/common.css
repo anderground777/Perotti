@@ -54,7 +54,7 @@ color: var(--color-black);
 
 /* top-menu */
 .top-menu {
-  /* width: 1440px; */
+  width: 100%;
   min-height: 88px;
   display: flex;
   justify-content: space-between;
