@@ -38,8 +38,6 @@ a {
 color: var(--color-black);
 }
 
-
-
 .head-regular {
   font-family: 'PT Sans', sans-serif;
   font-weight: 600;
@@ -200,7 +198,13 @@ color: var(--color-black);
   background-color: #5FA1A6;
   z-index: 10;
 }
+/* mainbanner */
 
+.mainbanner__img {
+  position: absolute;
+  /* z-index: ; */
+  right: 0;    
+}
 
 /* line----header---line */
 .header--line {

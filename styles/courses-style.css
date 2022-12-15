@@ -1,10 +1,7 @@
-/* header */
-
-/* .header {
-  border-bottom: 1px solid #83C2D5;
-  box-shadow: 0px 3px 5px 0px rgba(71, 71, 71, 0.25);
-  margin-bottom: 5px;
-} */
+.banner {
+  position: relative;
+  right: 150px;
+}
 
 .mainbanner__wrap {
   display: flex;
@@ -48,6 +45,7 @@
   position: absolute;
   left: 793px;
   top: 176px;
+  z-index: 2;
 }
 
 .mainbanner__vector1 {
@@ -391,20 +389,8 @@
 }
 
 .master-class__button {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  list-style: none;
-  text-decoration: none;
-  color: white;
-  background-color: #83C2D5;
-  transition: all 0.3s;
   margin-left: 305px;
   margin-top: -60px;
-  height: 39px;
   width: 216px;
 }
 
@@ -525,20 +511,8 @@
 }
 
 .master-class__button2 {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  list-style: none;
-  text-decoration: none;
-  color: white;
-  background-color: #83C2D5;
-  transition: all 0.3s;
   margin-left: -55px;
   margin-top: 40px;
-  height: 39px;
   width: 216px;
 }
 
@@ -611,16 +585,6 @@
 }
 
 .gallery__button {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  justify-content: center;
-  border-radius: 15px;
-  list-style: none;
-  text-decoration: none;
-  background-color: #83C2D5;
-  transition: all 0.3s;
-  height: 39px;
-  width: 260px;
   margin-top: 50px;
   margin-left: 590px;
 }
