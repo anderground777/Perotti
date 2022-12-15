@@ -11,7 +11,8 @@
     <!-- подключаем стили -->
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="styles/button.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/button.css">
 </head>
 <body class="body">
     <header class="header">
@@ -20,31 +21,31 @@
                 <div class="top-menu">
                     <div class="top-menu__left">
                         <ul class="menu-left">
-                            <li class="menu-left__item"><a href="">Обо мне</a></li>
-                            <li class="menu-left__item"><a href="">Галерея</a></li>
-                            <li class="menu-left__item"><a href="">Арт - клуб</a></li>
-                            <li class="menu-left__item"><a href="">Школа</a></li>
+                            <li class="menu-left__item"><a href="../index.html">Обо мне</a></li>
+                            <li class="menu-left__item"><a href="../pages/gallary.html">Галерея</a></li>
+                            <li class="menu-left__item"><a href="../pages/courses.html">Арт - клуб</a></li>
+                            <li class="menu-left__item"><a href="https://www.perottischool.ru/" target="_blank">Школа</a></li>
                             <li class="menu-left__item"><a href="">Контакты</a></li>
                         </ul>
                     </div>
                     <div class="top-menu__right">
                         <div class="menu-right telegram">
-                            <a href="https://telegram.org" class="tooltip-telegram"> <img src="images/telegram.svg" alt=""></a>
+                            <a href="https://telegram.org" class="tooltip-telegram" target="_blank"> <img src="../images/telegram.svg" alt=""></a>
                             <span class="icon">Telegram</span>
                         </div>
                         <div class="menu-right youtube">
-                            <a href="https://www.youtube.com/@perottischool" class="tooltip-youtube"> <img src="images/youtube.svg" alt=""></a>
+                            <a href="https://www.youtube.com/@perottischool" class="tooltip-youtube" target="_blank"> <img src="../images/youtube.svg" alt=""></a>
                             <span class="icon">YouTube</span>
                         </div>
                         <div class="menu-right instagram">
-                            <a href="https://www.instagram.com" class="tooltip-instagram"> <img src="images/instagram.svg" alt=""></a>
+                            <a href="https://www.instagram.com" class="tooltip-instagram" target="_blank"> <img src="../images/instagram.svg" alt=""></a>
                             <span class="icon">Instagram</span>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </div>
-    </header>       
+            </nav>            
+        </div>    
+    </header>      
     <section class="privacy">
         <div class="container">
         <h2>Политика в отношении обработки персональных данных.</h2>
@@ -164,32 +165,42 @@
             <p>14.1. Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его персональных данных, обратившись к Оператору с помощью электронной почты info@madomain.com.
                 14.2. В данном документе будут отражены любые изменения политики обработки персональных данных Оператором. Политика действует бессрочно до замены ее новой версией.
                 14.3. Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу https://mywebsite.com/privacy.</p>
-                <a href="../index.html">На главную</a>
+                <div class="button-line">
+                    <a href="../index.html" class="button__nonaction">На главную</a>
+                    <span class="button__action"></span>
+                </div>
 
         </div>        
     </section>        
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer-container">
             <div class="footer__item">
-                <a href="">Работы</a>
-                <a href="">Услуги</a>
-                <a href="">Обо мне</a>
-                <a href="">Как добраться</a>
+                <a href=""><b><script type="text/javascript">                    
+                    document.write(unescape('%69%6e%66%6f%40%70%65%72%6f%74%74%69%73%63%68%6f%6f%6c%2e%72%75'));                    
+                    </script></b></a>
+                <a href="../index.html">Главная</a>
+                <a href="../pages/gallary.html#gallary">Работы</a>                            
+                <a href="../index.html#location">Как добраться</a>
+                
             </div>
             <div class="footer__item">
-                <a href="">8 800 800 800</a>
-                <a href="">Telegram</a>
-                <a href="">VKontakte</a>
-                <a href="">WhatsApp</a>
+                <a href="tel:"><b>8 (800) 201-22-87</b></a>
+                <a href="https://vk.com/perottiartschool" target="_blank">VK</a>
+                <a href="https://www.youtube.com/@perottischool" target="_blank">YouTube</a>
+                <a href="https://www.instagram.com/perottiartschool/" target="_blank">Instagram</a>
             </div>
             <div class="footer__item item-location">
                 <h3>Школа Искусств Перотти на Динамо</h3>
                 <p>Москва, ул. Расковой, дом 16/18 (метро Белорусская/Динамо)
+                <br><b>тел. +7 (985) 920-12-80</b>
                 </p>
+                
                 <h3>Школа Искусств Перотти на Юго-Западе</h3>
                 <p>Москва, ул. Никулинская дом 6, корп. 3 (метро Юго-Западная)
+                <br><b>тел. +7 (985) 920-12-78</b>
                 </p>
+                
             </div>
             <div class="footer__item item-form">
                 <p>Если у Вас есть вопросы или предложения вы можете написать нам</p>

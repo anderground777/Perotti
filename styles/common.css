@@ -48,6 +48,12 @@ color: var(--color-black);
   text-transform: uppercase;  
 }
 
+.header {
+  border-bottom: 1px solid #83C2D5;
+  box-shadow: 0px 3px 5px 0px rgba(71, 71, 71, 0.25);
+  margin-bottom: 5px;
+}
+
 /* top-menu */
 .top-menu {
   /* width: 1440px; */
@@ -266,7 +272,7 @@ color: var(--color-black);
   .footer-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 132px;
+    grid-column-gap: 80px;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
@@ -285,6 +291,7 @@ color: var(--color-black);
     grid-template-columns: 1fr;
     align-items: center;
     height: 100%;
+    width: 130px;
     
   }
   
@@ -312,7 +319,7 @@ color: var(--color-black);
   }
   
   .item-form {
-    min-width: 230px;
+    min-width: 290px;
   }
 
 
