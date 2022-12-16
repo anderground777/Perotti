@@ -169,7 +169,7 @@ h1 {
 }
 
 .block2__description {
-    max-width: 417px;
+    width: 417px;
     left: 705px;    
 }
 
@@ -193,7 +193,7 @@ h1 {
 }
 
 .block4__description {
-  max-width: 562px;
+  width: 562px;
   left: 560px;
 }
 

@@ -179,4 +179,5 @@
 .button-block {
     justify-content: center;
     margin-bottom: 100px;
+    max-width: 1140px;
 }
