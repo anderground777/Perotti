@@ -11,14 +11,21 @@
 
     <!-- подключаем стили -->
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/hamburgers.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/button.css">
+    
 
 </head> 
 <body class="body">
     <header class="header">
         <div class="container">
+            <button class="header__toggle hamburger hamburger--squeeze" type="button" onclick="this.classList.toggle('is-active')">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
             <nav class="menu">
                 <div class="top-menu">
                     <div class="top-menu__left">
