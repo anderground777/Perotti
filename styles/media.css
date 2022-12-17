@@ -1,15 +1,51 @@
-@media screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
+    .button-page-life {
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
     /* экраны 1024px и меньше */
     .menu {
         display: none;
+        width: 100%;
+        left: 0;
+        top: 59px;
         position: absolute;
-        right: 0;
-        top: 140px;
-    }
+        padding: 30px 50px;
+        background-color: white;
+        z-index: 10;
+        
+  }
 
+  .top-menu__left ul {
+    flex-direction: column;
+    font-size: 2em;
+    align-items: flex-start;
+    
+  }
+
+  .top-menu__right {
+    display: none;
+  }
+       
+  
+  .header {
+    /* width: 50%; */
+    position: relative;
+    
+  }
     .header__toggle {
         display: block;
-     
+    }
+
+    .header__toggle.is-active + .menu {
+        display: block;
+    }    
+
+
+    .mainbanner {
+        width: 100%;
     }
 
     .mainbanner__logo {
@@ -25,9 +61,15 @@
     }
 
     .mainbanner__text {
-        bottom: -40px;
+        bottom: -20px;
         padding-right: 30px;
+        font-size: 1.5em;
+        text-align: left;
         
+    }
+
+    .page-life__description h1 {
+        font-size: 2em;
     }
 
     .page-life__block {
@@ -41,5 +83,26 @@
 
     .page-life__img {
         margin: 0 auto;
+    }
+
+    .page-life__paragraph {
+        margin-bottom: 15px;
+        font-size: 24px;
+        line-height: 150%;
+    }
+
+    .button-page-life {
+        margin: 0 auto;
+    }
+
+    .button-line {
+        width: 380px;
+        margin-top: 30px;
+    }
+
+    .button__nonaction {
+        padding: 25px 0;
+        border-radius: 2em;
+        font-size: 1.5em;
     }
 }
