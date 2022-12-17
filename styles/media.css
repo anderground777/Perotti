@@ -1,0 +1,45 @@
+@media screen and (max-width: 1024px) {
+    /* экраны 1024px и меньше */
+    .menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 140px;
+    }
+
+    .header__toggle {
+        display: block;
+     
+    }
+
+    .mainbanner__logo {
+        display: none;
+    }
+
+    .mainbanner__img {
+        display: none;
+    }
+
+    .mainbanner__head {
+        margin: 20px auto;
+    }
+
+    .mainbanner__text {
+        bottom: -40px;
+        padding-right: 30px;
+        
+    }
+
+    .page-life__block {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .page-life__block:last-child {
+        flex-direction: column-reverse;
+    }
+
+    .page-life__img {
+        margin: 0 auto;
+    }
+}

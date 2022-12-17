@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Светлана Перотти</title>
 
     <!-- подключаем шрифты -->
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/button.css">
+    <link rel="stylesheet" href="/styles/media.css">
     
 
 </head> 
@@ -56,19 +57,21 @@
         </div>    
     </header>
     <section class="mainbanner">
-        <div class="mainbanner__wrap container">
+        <div class="mainbanner__wrap container d-flex">
             <div class="mainbanner__description">
                 <h2 class="mainbanner__head">Живопись — <span>искусство</span>, доступное каждому</h2>
                 <p class="mainbanner__text">Светлана Перотти — известный художник, преподаватель, основатель Школы Искусств, автор и ведущая онлайн-клуба Перотти.</p>
             </div>
-            <img src="images/logo.svg" alt="Логотип" class="mainbanner__logo">
-            <img src="images/mainbanner-right.jpg" class="mainbanner__img" alt="Светлана Перотти">
+            <div class="wrapper">
+                <img src="images/logo.svg" alt="Логотип" class="mainbanner__logo">
+                <img src="images/mainbanner-right.jpg" class="mainbanner__img" alt="Светлана Перотти">
+            </div>
         </div>
     </section>
     <section class="page-life" id="aboutme">
         <div class="container">
             <div class="page-life__block d-flex">
-                <img src="images/page-life-1.jpg" alt="Светлана Перотти">
+                <img src="images/page-life-1.jpg" class="page-life__img" alt="Светлана Перотти">
                 <div class="page-life__description">
                     <h1 class=>Светлана Перотти</h1>
                     <div class="page-life__text border--right">
@@ -89,7 +92,7 @@
                         <span class="button__action"></span>
                     </div>                      
                 </div>
-                <img src="images/page-life-2.jpg" alt="Светлана Перотти">
+                <img src="images/page-life-2.jpg" class="page-life__img" alt="Светлана Перотти">
             </div>
         </div>
     </section>
