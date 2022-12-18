@@ -86,7 +86,7 @@
 /* ====ОСТАВИТЬ ЗАЯВКУ==== */
 
 .push__nonaction {
-    padding: 16px 47px 0;
+    padding: 16px 47px 11px;
     border: 5px solid #E3E3E3;
     border-radius: 29px;
     font-weight: 800;
@@ -177,7 +177,8 @@
 }
 
 .button-block {
+    display: flex;
     justify-content: center;
     margin-bottom: 100px;
-    max-width: 1140px;
+    /* max-width: 1140px; */
 }

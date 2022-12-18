@@ -1,11 +1,21 @@
-@media only screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
+    /* экраны 1200px и меньше */
     .button-page-life {
         margin-left: 50px;
     }
+    .location-block {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .location__left {
+        margin-left: 30px;
+    }
 }
 
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     /* экраны 1024px и меньше */
+    
+     
     .menu {
         display: none;
         width: 100%;
@@ -14,7 +24,7 @@
         position: absolute;
         padding: 30px 50px;
         background-color: white;
-        z-index: 10;
+        z-index: 100;
         
   }
 
@@ -32,15 +42,19 @@
   
   .header {
     /* width: 50%; */
-    position: relative;
+    /* position: relative; */
+    
     
   }
     .header__toggle {
         display: block;
+        
+    
     }
 
     .header__toggle.is-active + .menu {
         display: block;
+        
     }    
 
 
@@ -63,7 +77,7 @@
     .mainbanner__text {
         bottom: -20px;
         padding-right: 30px;
-        font-size: 1.5em;
+        /* font-size: 1.5em; */
         text-align: left;
         
     }
@@ -87,7 +101,7 @@
 
     .page-life__paragraph {
         margin-bottom: 15px;
-        font-size: 24px;
+        font-size: 1.3em;
         line-height: 150%;
     }
 
@@ -98,11 +112,161 @@
     .button-line {
         width: 380px;
         margin-top: 30px;
+        
     }
 
     .button__nonaction {
-        padding: 25px 0;
+        /* padding: 25px 0; */
         border-radius: 2em;
         font-size: 1.5em;
     }
+
+    /* интервью */
+    .header--line {
+        margin: 50px 0;
+    }
+
+    .header--line span {
+        font-size: 2em;
+    }
+
+    .interview__block {
+        margin-top: 10px;    
+    }
+
+    .interview__block1 {
+        background-image: linear-gradient(270deg, transparent, white 60%), url(../images/banner-rotate.png); 
+        /* background-image: none; */
+        margin-bottom: 20px;    
+        
+    }
+
+    .block1__description {
+        max-width: 1023px; 
+        /* max-height: 600px;        */
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px 30px 0 30px;
+        /* position: relative;  */
+        /* transform: translate(0, 0); */   
+                       
+    }
+
+    .interview__text {
+        font-size: 1.3em;
+    }
+
+    .interview__block2 {
+        background-image: linear-gradient(90deg, transparent, white 60%), url(../images/banner-rotate.png); 
+        /* background-image: none; */
+    }
+
+    .block2__description {
+        max-width: 1023px;
+        /* min-height: 600px;  */
+        margin-top: 20px;       
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px 30px 0 30px;
+        /* position: relative; 
+        transform: translate(0, 0); */
+        left: 0;        
+    }
+
+    .block3__description {
+        max-width: 1023px;
+        /* min-height: 600px; */
+        margin-top: 20px;       
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px 30px 0 30px;
+        /* position: relative; 
+        transform: translate(0, 0); */
+        left: 0;       
+    }   
+    
+    .interview__block3 {
+        /* background-image: none; */
+        background-image: linear-gradient(270deg, transparent, white 60%), url(../images/banner-rotate.png);
+    }    
+
+    .block4__description {
+        max-width: 1023px;
+        min-height: 600px;
+        margin-top: 20px;       
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px 30px 0 30px;
+        /* position: relative; 
+        transform: translate(0, 0); */
+        left: 0;
+        
+    }   
+    
+    .interview__block4 {
+        /* background-image: none; */
+        background-image: linear-gradient(90deg, transparent, white 60%), url(../images/banner-rotate.png);
+    }
+    
+    .button-block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .acquaintance__actions {
+        margin-bottom: 0;
+    }
+    .acquaintance__actions:last-child {
+       margin-right: 46px;
+    }
+
+    .map {
+        width: 550px;
+        height: 450px;
+        /* margin-right: 30px; */
+        
+    }
+
 }
+
+@media screen and (max-width: 560px) {
+    /* экраны 560px и меньше */
+    .mainbanner {
+        width: 100%;
+    }
+
+    .mainbanner__head {
+        margin: 20px auto;
+        font-size: 2em;
+        /* background-image: none; */
+        background-size: 65%;
+        max-height: 220px;
+    }
+
+    .mainbanner__text {
+       margin-left: 30px;        
+    }
+
+    .page-life__img {
+        max-width: 320px;
+    }
+
+    .button-line {
+        width: 280px;
+        margin-top: 30px;
+        
+    }
+
+    .push__nonaction {
+        border: 5px solid #5FA1A6;
+    }
+
+    .map {
+        width: 310px;
+        height: 400px;
+        /* margin-right: 30px; */
+        
+    }
+
+    
+    
+}    

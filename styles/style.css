@@ -19,6 +19,7 @@
 
 .header {
   
+  
 }
 
 .header__toggle {
@@ -44,7 +45,7 @@
     font-size: 3em;
     font-weight: 400;    
     text-transform: uppercase;
-    width: 390px;
+    max-width: 390px;
     height: 275px;
     padding-top: 28px;
     padding-left: 30px;
@@ -134,21 +135,20 @@ h1 {
 
 .interview__block {
   margin-top: 100px;
-  
   position: relative;
   
 }
 .block__description {
-  top: 50%;                        
+  /* top: 50%;                        
   transform: translate(0, -50%);
-  position: absolute;
+  position: absolute; */
 }
 
 .interview__block1 {
     background: var(--color-white);
     background-image:  linear-gradient(78.33deg, #FFFAFA 28.73%, rgba(255, 255, 255, 0) 100%), url(../images/interview-photo1.jpg);
     background-repeat: no-repeat;
-    height: 533px;
+    /* max-height: 533px; */
     background-position: right;    
 }
 
@@ -161,12 +161,12 @@ h1 {
     background: var(--color-white);
     background-image: linear-gradient(90deg, transparent, white 60%), url(../images/interview-photo2.jpg);
     background-repeat: no-repeat;
-    height: 600px;
+    /* max-height: 600px; */
     background-position: left;
 }
 
 .block2__description {
-    width: 417px;
+    max-width: 417px;
     left: 705px;    
 }
 
@@ -174,7 +174,7 @@ h1 {
     background-image: linear-gradient(270deg, transparent, white 60%), url(../images/interview-photo3.jpg);
     background-repeat: no-repeat;
     background-position: right;
-    height: 600px;       
+    /* max-height: 600px;        */
 }
 
 .block3__description {
@@ -185,12 +185,12 @@ h1 {
 .interview__block4 {
     background-image: linear-gradient(90deg, transparent, white 60%), url(../images/interview-photo4.jpg);
     background-repeat: no-repeat;
-    height: 600px;
+    /* height: 600px; */
     background-position: left;
 }
 
 .block4__description {
-  width: 562px;
+  max-width: 562px;
   left: 560px;
 }
 

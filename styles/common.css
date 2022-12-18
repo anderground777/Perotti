@@ -34,6 +34,12 @@ font-weight: 400;
   display: flex;
 }
 
+.d-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
 a {
 color: var(--color-black);
 }
