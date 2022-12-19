@@ -167,7 +167,8 @@ h1 {
 
 .block2__description {
     max-width: 417px;
-    left: 705px;    
+    left: 705px;
+    position: relative;    
 }
 
 .interview__block3 {
@@ -192,6 +193,7 @@ h1 {
 .block4__description {
   max-width: 562px;
   left: 560px;
+  position: relative;
 }
 
 .head--block4 {

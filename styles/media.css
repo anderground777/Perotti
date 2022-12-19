@@ -204,9 +204,10 @@
     }
     .acquaintance__actions {
         margin-bottom: 0;
+        margin-right: 0;
     }
     .acquaintance__actions:last-child {
-       margin-right: 46px;
+       
     }
 
     .map {
@@ -267,6 +268,7 @@
 
     .page-life__img {
         max-width: 320px;
+        height: auto;
     }
 
     .button-line {
@@ -294,9 +296,24 @@
         margin-left: 30px;
         
     }
+    .item-form {
+        
+    }
+
+    .item-location {
+        
+    }
+
+    .button-send {
+        
+        
+        
+    }
 
     .button-send__action {
         margin-bottom: 50px;
+        width: 280px;
+        font-size: 1em;
     }
     
     
