@@ -333,5 +333,99 @@ color: var(--color-black);
     min-width: 290px;
   }
 
+  /* форма обратной связи */
+
+  .page-form {
+    width: 30%;
+    margin: auto;
+}
+
+.form-container {
+    display: grid;
+    grid-row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.logo-form {
+    margin: auto;
+}
+
+.push-form {
+    display: grid;
+    grid-row-gap: 30px;
+}
+
+.input-group{
+    position:relative;
+  }
+  
+.input-group label {
+  padding:0 10px;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  text-transform: capitalize;
+  pointer-events: none;
+  font-size:20px;
+  transition: all 0.3s;
+}
+
+.input-group input,
+.input-group textarea {
+  padding: 18px 15px;
+  width: 100%;
+  border: 3px solid #83C2D5;
+  outline: none;
+  color: black;
+  font-size: 16px;
+  font-family:inherit;
+  background-color: transparent;
+  border-radius:10px;
+}
+
+.message-form label {
+  top: 10%;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+  top:0;
+  font-size:16px;
+}
+
+.form-container h2 {
+  margin: auto;
+  letter-spacing: 0.07em;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.polity p {
+  text-align: center;
+}
+
+.button-push {
+  margin: auto;
+}
+
+.button-push input {
+  width: 100%;
+  border: #83C2D5;
+  font-weight: 550;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+}
+
 
   
