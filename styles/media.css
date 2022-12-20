@@ -34,7 +34,8 @@
         position: absolute;
         padding: 30px 50px;
         background-color: var(--color-white);
-        z-index: 100;        
+        z-index: 2;
+        position: fixed;        
   }
 
   .top-menu__left ul {
@@ -47,19 +48,34 @@
   .top-menu__right {
     display: none;
   }
-       
+
+  .header {
+    height: 60px;
+    position: fixed;
+    z-index: 6;
+    width: 100%;
+    background-color: var(--color-white);
+    margin-bottom: 80px;
+  }
+     
    
     .header__toggle {
-        display: block;    
+        display: block;
+        z-index: 3;
+        position: fixed;
+        top: 0; 
+        overflow: hidden;  
     }
 
     .header__toggle.is-active + .menu {
-        display: block;        
+        display: block;
+        z-index: 4;       
     }    
 
 
     .mainbanner {
         width: 100%;
+        padding-top: 60px;
     }
 
     .mainbanner__logo {
@@ -270,6 +286,11 @@
         width: 310px;
         height: 400px;
                 
+    }
+
+    .item-location {
+        min-width: 290px;
+        padding-right: 30px;
     }
 
     .footer-container {
