@@ -284,26 +284,35 @@ a {
     position: relative;
   }
 /*Масляная живопись*/
-  .gallary__ellips-one {
+  .title {
+    
+  }
+  /* .gallary__ellips-one {
     position: absolute;
     top: 110px;
     left: 247px;
-  }
+  } */
 
   .gallary__subtitle-one {
-    display: flex;
-    justify-content: space-between;
-    width: 324px;
-    height: 31px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    margin: 0 auto;
+    max-width: 354px;
+    height: 100px;
     position: relative;
-    top: 50px;
-    left: 294px;
+    padding-top: 34px;
+    padding-left: 20px;
+    /* top: 50px; */
+    /* left: 294px; */
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 31px;
+    /* line-height: 31px; */
     color: #050505;
+    background-image: url(../icons/Ellipse-one.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .gallary__subtitle-one p {
@@ -311,14 +320,18 @@ a {
 }
 
 .gallary__item-one {
-    width: 1141px;
-    height: 1849px;
+    max-width: 1140px;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 100px;
-    margin-left: 150px;
-    row-gap: 15px;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;   
+    margin: auto;
+    margin-top: 50px; 
+}
+
+.gallary__item-one img {
+   
 }
 
 .gallary__item-one img {
