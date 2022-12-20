@@ -11,15 +11,22 @@
      <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Raleway&display=swap" rel="stylesheet">
      <!--Подключаем стили-->
      <link rel="stylesheet" href="../styles/normalize.css">
+     <link rel="stylesheet" href="../styles/hamburgers.css">
     <link rel="stylesheet" href="../styles/gallary-style.css">
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/button.css">
+    <link rel="stylesheet" href="../styles/media.css">
      
 </head>
 <body class="body">
     <!--Главное меню-->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
+            <button class="header__toggle hamburger hamburger--squeeze" type="button" onclick="this.classList.toggle('is-active')">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button>
             <nav class="menu">
                 <div class="top-menu">
                     <div class="top-menu__left">
@@ -48,8 +55,10 @@
                 </div>
             </nav>            
         </div>    
-    </header> -->
+    </header>
+
     <!--Баннер-->
+
     <!-- <section class="mainbanner">
         <div class="mainbanner__wrap container">
             <div class="mainbanner__description">
@@ -92,12 +101,12 @@
 
             <!--Авторская серия персонажей-->
             <div class="gallary__wrap">
-                <!-- <div class="gallary__item-two">
-                   <img class="gallary__ellips-two" src="../icons/Ellipse-two.svg" alt="">
+                 <div class="gallary__item-two">
+                   <!-- <img class="gallary__ellips-two" src="../icons/Ellipse-two.svg" alt=""> -->
                     <div class="gallary__subtitle-two">
                         <p>Авторская серия персонажей в <br> технике масляная живопись</p>
                     </div>
-                    <!-- <div class="gallary__item-two-images">
+                     <div class="gallary__item-two-images">
                         <img src="../images/photo_2022-11-29_09-05-32 1.jpg" alt="">
                         <img src="../images/photo_2022-11-29_09-05-25 1.jpg" alt="">
                         <img src="../images/photo_2022-11-29_09-05-26 1.jpg" alt="">
@@ -106,17 +115,17 @@
                         <img src="../images/photo_2022-11-29_09-05-24 1.jpg" alt="">
                         <img src="../images/photo_2022-11-29_09-05-30 1.jpg" alt="">
                         <img src="../images/photo_2022-11-29_09-05-31 1.jpg" alt="">
-                    </div>   -->
-                </div>         -->
+                    </div>   
+                </div>         
             </div> 
             <!--Работы в стиле импрессионизм-->
-            <!-- <div class="gallary__item-three">
+             <div class="gallary__item-three">
                 <div class="gallary__wrap">
-                    <img class="gallary__ellips-three" src="../icons/Ellipse-three.svg" alt="">
+                    <!-- <img class="gallary__ellips-three" src="../icons/Ellipse-three.svg" alt=""> -->
                     <div class="gallary__subtitle-three">
                         <p>Работы в стиле импрессионизм<br> смешанная техника</p>
                     </div>
-                    <!-- <div class="gallary__item-three-images">
+                     <div class="gallary__item-three-images">
                         <img src="../images/photo_2022-11-29_09-05-14 1 (1).jpg" alt="">
                         <img src="../images/photo_2022-11-29_09-05-16 1.jpg" alt="">
                         <img src="../images/photo_2022-11-29_09-05-18 1.jpg" alt="">
@@ -124,45 +133,47 @@
                         <img src="../images/photo_2022-11-29_09-05-21 1.jpg" alt="">
                         <img src="../images/photo_2022-11-29_09-08-56 1.jpg" alt="">
                         <img src="../images/photo_2022-11-29_09-05-23 1.jpg" alt="">
-                    </div>  -->
+                    </div>  
                 </div>                
-            </div>   -->
+            </div>   
         </div>   
     </section>
 
-    <!-- <section class="location" id="location">
+    <!-- где найти -->
+
+     <section class="location" id="location">
         <div class="header--line">
             <span>где найти вдохновение</span>
         </div>
-        <div class="container d-flex">
+        <div class="container d-flex location-block">
             <div class="location__left">
                 <div class="location__text-item">
                     <p class="location__head" >Школа Искусств Перотти на Динамо</p>
                     <div class="wraper d-flex">
-                        <img src="../icons/Vector.svg" class="img--pointer" alt="pointer">
+                        <img src="../images/pointer.svg" class="img--pointer" alt="pointer">
                         <p class="location__text" >Москва, ул. Расковой, дом 16/18 (метро Белорусская/Динамо)</p>
                     </div>    
                 </div>
                 <div class="location__text-item">
                     <p class="location__head">Школа Искусств Перотти на Юго-Западе</p>
                     <div class="wraper d-flex">
-                        <img src="../icons/Vector.svg"  class="img--pointer" alt="pointer">
+                        <img src="../images/pointer.svg"  class="img--pointer" alt="pointer">
                         <p class="location__text">Москва, ул. Никулинская дом 6, корп. 3 (метро Юго-Западная)</p>
                     </div>    
                 </div>
                 <div class="location__text-item">
                     <p class="location__text">Оставьте заявку на обучение или можете продолжить знакомиться с нами</p>
                 </div>
-                <a href="" class="push__nonaction">Оставить заявку</a>
+                <a href="pages/form.html" class="push__nonaction">Оставить заявку</a>
             </div>
             <div class="location__map">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7bf3dc5ba36fe83866f45ccd90815dcaa5906c6788284faa28fc96d8bc386268&amp;source=constructor" width="696" height="500" frameborder="0"></iframe>          
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7bf3dc5ba36fe83866f45ccd90815dcaa5906c6788284faa28fc96d8bc386268&amp;source=constructor" width="696" height="500" frameborder="0" class="map"></iframe>          
             </div> 
         </div>
-    </section> -->
+    </section> 
 
-    <!--footer-->
-    <!-- <footer class="footer" id="footer">
+    <!-- footer -->
+    <footer class="footer" id="footer"> 
         <div class="footer-container">
             <div class="footer__item">
                 <a href="mailto:"><b><script type="text/javascript">                    
@@ -198,6 +209,6 @@
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
 </body>
 </html>
