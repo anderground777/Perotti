@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+.header__toggle {
+  display: none;
+}
+
 /* .body {
   max-width: 1440px;
   margin: 0 auto;
