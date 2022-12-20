@@ -569,9 +569,7 @@
 
 .gallery__photo {
   margin-top: 60px;
-  display: flex;
-  justify-content: center;
-  grid-gap: 10px;
+  
 }
 
 .gallery__photo--img {

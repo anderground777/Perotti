@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+.gallery {
+  display: grid;
+  /* min-height: 100vh; */
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery__flex {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-rewiew {
+  display: flex;
+  justify-content: center;
+  width: calc(80% - 2rem);
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.gallery-result {
+  padding: 0;
+}
+
+.gallery-rewiew img {
+  max-width: 100%;
+  /* width: 100%; */
+  object-fit: cover;
+  transition: all 0.2s ease;
+}
+
+.gallery-rewiew:is(:hover, :focus-within) img {
+  opacity: calc(0.1 + (var(--active-lerp, 0) * 0.9));
+  filter: grayscale(calc(1 - var(--active-lerp, 0)));
+}
+
+:root {
+  --lerp-0: 1;
+  --lerp-1: 0.5787037;
+  --lerp-2: 0.2962963;
+  --lerp-3: 0.125;
+  --lerp-4: 0.037037;
+  --lerp-5: 0.0046296;
+  --lerp-6: 0;
+}
+
+.photo-gallery {
+  outline-offset: 4px;
+}
+
+.gallery-result {
+  flex: calc(0.1 + (var(--active-lerp, 0) * 1));
+  transition: flex 0.2s ease;
+}
+
+.gallery-result:is(:hover, :focus-within) {
+  --active-lerp: var(--lerp-0);
+  z-index: 7;
+}
+.gallery-result:has( + .gallery-result:is(:hover, :focus-within)),
+.gallery-result:is(:hover, :focus-within) + .gallery-result {
+  --active-lerp: var(--lerp-1);
+  z-index: 6;
+}
+.gallery-result:has( + .gallery-result + .gallery-result:is(:hover, :focus-within)),
+.gallery-result:is(:hover, :focus-within) + .gallery-result + .gallery-result {
+  --active-lerp: var(--lerp-2);
+  z-index: 5;
+}
+.gallery-result:has( + .gallery-result + .gallery-result + .gallery-result:is(:hover, :focus-within)),
+.gallery-result:is(:hover, :focus-within) + .gallery-result + .gallery-result + .gallery-result {
+  --active-lerp: var(--lerp-3);
+  z-index: 4;
+}
+.gallery-result:has( + .gallery-result + .gallery-result + .gallery-result + .gallery-result:is(:hover, :focus-within)),
+li:is(:hover, :focus-within) + .gallery-result + .gallery-result + .gallery-result + .gallery-result {
+  --active-lerp: var(--lerp-4);
+  z-index: 3;
+}
+.gallery-result:has( + .gallery-result + .gallery-result + .gallery-result + .gallery-result + .gallery-result:is(:hover, :focus-within)),
+.gallery-result:is(:hover, :focus-within) + .gallery-result + .gallery-result + .gallery-result + .gallery-result + .gallery-result {
+  --active-lerp: var(--lerp-5);
+  z-index: 2;
+}
+.gallery-result:has( + .gallery-result + .gallery-result + .gallery-result + .gallery-result + .gallery-result + .gallery-result:is(:hover, :focus-within)),
+.gallery-result:is(:hover, :focus-within) + .gallery-result + .gallery-result + .gallery-result + .gallery-result + .gallery-result + .gallery-result {
+  --active-lerp: var(--lerp-6);
+  z-index: 1;
+}

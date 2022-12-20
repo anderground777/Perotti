@@ -1,0 +1,529 @@
+:root {
+    --color_1: #83C2D5;    
+    --color_2: #D6AA45;    
+    --color_3: #5FA1A6;
+    --color-white: #ffffff;
+    --color-black: #111111;
+    --color-gray: #E3E3E3;
+}
+/* common */
+*{
+    box-sizing: border-box;  
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;    
+}  
+
+a {
+  color: var(--color-black);
+}
+
+.head-regular {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 150%;
+  text-transform: uppercase;  
+}
+
+/* line----header---line */
+.header--line {
+  overflow: hidden;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+.header--line span {
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;    
+}
+
+.header--line::before,
+.header--line::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color_1);
+  position: relative;
+}
+
+.header--line::before {
+  margin-left: -100%;
+  left: -20px;
+}
+
+.header--line::after {
+  margin-right: -100%;
+  right: -20px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+/* layout */
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.button__nonaction-blur {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  background-color: #83C2D5;
+  transition: all 0.3s;
+  margin-left: -55px;
+  height: 39px;
+  width: 216px;
+}
+
+
+/* button */
+.button {
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  width: 290px;
+  text-decoration: none;
+  padding: 0 40px;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button--blue {
+  background-color: var(--color_1);
+  color: var(--color-white);
+  border-radius: 30px;
+}
+
+.button--blue:hover {
+  background-color: var(--color_3);
+}
+
+.button--white {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: 5px solid var(--color-gray);
+  border-radius: 30px;
+}
+
+.button--white:hover {
+  border: 5px solid var(--color_3);
+}
+
+/* header */
+
+.header {
+    border-bottom: 1px solid #83C2D5;
+    box-shadow: 0px 3px 5px 0px rgba(71, 71, 71, 0.25);
+    margin-bottom: 5px;
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+}
+
+.mainmenu {
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+.mainmenu__item a {
+    color: black;
+    text-decoration: none;
+}
+
+.mainmenu__item a::before, .mainmenu__item a::after {
+    content: '';
+    display: block;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color_1);
+    transition: width 0.2s ease-out;
+  }
+
+.mainmenu__item a:hover::after, .mainmenu__item a:hover::before {
+    width: 80%;
+  }
+
+.mainmenu__item {
+    margin-right: 80px;
+  }
+
+.mainmenu__item:last-child {
+    margin-right: 0;
+  }
+
+.header__social a {
+    margin-right: 70px;
+  }
+
+.header__social a:last-child {
+    margin-right: 0;
+  }
+
+.social__link {
+    color: var(--color_1);
+  }
+
+.social__link svg:hover {
+    fill: #D6AA45;    
+  }
+
+    /* Банер */
+.mainbanner {
+    background-image: url('../images/banner.jpg');
+    background-size: 100%;
+    height: 528px;  
+  }
+
+  .mainbanner__wrap {
+    display: flex;
+    position: relative;
+    margin: 0;
+  }
+
+  .mainbanner__head {
+    font-family: 'PT Sans';
+    line-height: 120%;
+    letter-spacing: 0.1em;
+    font-size: 3em;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 508px;
+    height: 174px;
+    margin-left: 200px;
+    margin-top: 71px;
+    background-repeat: no-repeat;
+  }
+
+.mainbanner__head span {
+    color: var(--color_3);
+}
+
+.mainbanner__logo {
+    position: absolute;
+    left: 793px;
+    top: 176px;
+  }
+
+.mainbanner__vector {
+    position: absolute;
+    top: 164px;
+    left: 206px;
+}
+
+.mainbanner__text {
+    position: relative;
+    width: 418px;
+    height: 48;
+    margin-top: 234px;
+    margin-left: 294px;
+    text-transform: uppercase;
+    text-align: justify;
+    letter-spacing: 0.04em;
+    line-height: 150%;
+  }
+
+    /*Галерея*/
+  .gallary {
+    margin-top: 100px;
+  }
+  
+  
+
+  .gallary__wrap {
+    position: relative;
+  }
+/*Масляная живопись*/
+  .gallary__ellips-one {
+    position: absolute;
+    top: 110px;
+    left: 247px;
+  }
+
+  .gallary__subtitle-one {
+    display: flex;
+    justify-content: space-between;
+    width: 324px;
+    height: 31px;
+    position: relative;
+    top: 50px;
+    left: 294px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #050505;
+}
+
+.gallary__subtitle-one p {
+    margin: 0;
+}
+
+.gallary__item-one {
+    width: 1141px;
+    height: 1849px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-left: 150px;
+    row-gap: 15px;
+}
+
+.gallary__item-one img {
+    transition: 1s;
+   
+}
+
+.gallary__item-one img:hover {
+    transform: scale(1.7);
+    z-index: 2;
+}
+
+
+/*Авторская серия персонажей*/
+.gallary__item-two {
+    width: 1141px;
+    height: 1539px;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.gallary__ellips-two {
+    position: absolute;
+    left: 224px;
+}
+
+.gallary__subtitle-two {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 387px;
+    height: 62px;
+    position: absolute;
+    top: 46px;
+    left: 240px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #050505;
+}
+
+.gallary__subtitle-two p {
+    margin: 0;
+}
+
+.gallary__item-two-images {
+    width: 1141px;
+    height: 1380px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    padding-top: 159px;
+}
+
+.gallary__item-two img {
+    transition: 1s;
+}
+
+.gallary__item-two img:hover {
+    transform: scale(1.7);
+    z-index: 2;
+}
+
+/*Работы в стиле импрессионизм*/
+.gallary__item-three {
+    width: 1141px;
+    height: 1433px;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.gallary__ellips-three {
+    position: absolute;
+    left: 106px;   
+}
+
+.gallary__subtitle-three {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 331px;
+    height: 62px;
+    position: absolute;
+    top: 37px;
+    left: 147px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #050505;
+}
+
+.gallary__subtitle-three p {
+    margin: 0;
+}
+
+.gallary__item-three-images {
+    width: 1141px;
+    height: 1317px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    padding-top: 116px;
+    padding-left: 0px;   
+}
+
+.gallary__item-three img {
+    transition: 1s;
+}
+
+.gallary__item-three img:hover {
+    transform: scale(1.7);
+    z-index: 2;
+}
+
+/*Как нас найти*/
+.img--pointer {
+    margin-right: 22px;
+  }
+
+.location__head {
+    font-weight: 700;
+  }
+  
+  .location__left {
+      display: grid;
+      margin-left: 105px;
+      margin-right: 26px;
+  }
+  
+  .location__text-item:nth-child(2), .location__text-item:first-child {
+    border-bottom: 2px solid var(--color_1);
+    margin-bottom: 30px;
+  }
+
+  .item-location {
+    min-width: 333px;
+}
+.item-location h3 {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+.item-form {
+    min-width: 230px;
+}
+
+
+.nav-contact a:hover {
+    color: #D6AA45;
+}
+
+.nav-page a:hover {
+    color: #D6AA45;
+}
+
+
+.item-location {
+    min-width: 333px;
+}
+
+.item-location h3 {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+.item-form {
+    min-width: 230px;
+}
+
+.button-send {
+    position: relative;
+    /* margin: 0; */
+    padding: 0;
+}
+
+.button-send__action {
+    padding: 18px 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    border-radius: 29px;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    background-color: #83C2D5;
+    transition: all 0.3s;
+}
+
+.button-send__action:hover {
+    background-color: #C19A3F;
+}
+
+
+
+
+
+
+  
+
