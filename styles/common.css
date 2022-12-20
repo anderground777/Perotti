@@ -336,7 +336,7 @@ color: var(--color-black);
   /* форма обратной связи */
 
   .page-form {
-    width: 30%;
+    width: 50%;
     margin: auto;
 }
 
@@ -345,9 +345,9 @@ color: var(--color-black);
     grid-row-gap: 30px;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 50px;
-    width: 100%;
+    
 }
 
 .logo-form {
@@ -406,8 +406,9 @@ color: var(--color-black);
   margin: auto;
   letter-spacing: 0.07em;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 2.5em;
+  line-height: 1.5em;
+  text-align: center;
 }
 
 .polity p {

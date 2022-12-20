@@ -276,6 +276,10 @@
         font-size: 0.8em;        
     }
 
+    .form-container h2 {
+        font-size: 2em;
+    }
+    
 }
 
 @media screen and (max-width: 560px) {
@@ -335,7 +339,15 @@
         margin-bottom: 50px;
         width: 17rem;
         font-size: 1em;
-    }    
+    }
+    
+    .form-container h2 {
+        font-size: 1.5em;
+    }
+
+    .input-group label {
+        font-size: 1em;
+    }
 }
 @media screen and (max-width: 390px) {
 
@@ -347,5 +359,7 @@
         /* margin-left: 54px; */
         /* margin-top: 40px; */
     }
-    
+    .form-container h2 {
+        font-size: 1em;
+    }
 }    
