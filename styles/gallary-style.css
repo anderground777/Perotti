@@ -223,10 +223,10 @@
 }   */
 
     /* Банер */
- .mainbanner {
+ .mainbanner2 {
     background-image: url('../images/banner.jpg');
     background-size: 100%;
-    height: 528px;  
+      
   }
 
   .mainbanner__wrap {
@@ -235,21 +235,21 @@
     margin: 0;
   }
 
-  .mainbanner__head {
+  .mainbanner2__head {
     font-family: 'PT Sans';
     line-height: 120%;
     letter-spacing: 0.1em;
     font-size: 3em;
     font-weight: 400;
     text-transform: uppercase;
-    width: 508px;
-    height: 174px;
+    max-width: 508px;
+    /* height: 174px; */
     margin-left: 200px;
     margin-top: 71px;
     background-repeat: no-repeat;
   }
 
-.mainbanner__head span {
+.mainbanner2__head span {
     color: var(--color_3);
 }
 
@@ -259,17 +259,17 @@
     top: 176px;
   }
 
-.mainbanner__vector {
+/* .mainbanner__vector {
     position: absolute;
     top: 164px;
     left: 206px;
-}
+} */
 
-.mainbanner__text {
+.mainbanner2__text {
     position: relative;
-    width: 418px;
-    height: 48;
-    margin-top: 234px;
+    max-width: 418px;
+    /* height: 48; */
+    margin-top: 150px;
     margin-left: 294px;
     text-transform: uppercase;
     text-align: justify;
