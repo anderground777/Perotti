@@ -11,15 +11,22 @@
      <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Raleway&display=swap" rel="stylesheet">
      <!--Подключаем стили-->
      <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="../styles/gallary-style.css">
-    <link rel="stylesheet" href="../styles/common.css">
-    <link rel="stylesheet" href="../styles/button.css">
+     <link rel="stylesheet" href="../styles/hamburgers.css">
+     <link rel="stylesheet" href="../styles/gallary-style.css">
+     <link rel="stylesheet" href="../styles/common.css">
+     <link rel="stylesheet" href="../styles/button.css">
+     <link rel="stylesheet" href="../styles/media.css">
      
 </head>
 <body class="body">
     <!--Главное меню-->
     <header class="header">
         <div class="container">
+            <button class="header__toggle hamburger hamburger--squeeze" type="button" onclick="this.classList.toggle('is-active')">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button>
             <nav class="menu">
                 <div class="top-menu">
                     <div class="top-menu__left">
@@ -62,18 +69,18 @@
     </section>
 
     <!--Галерея-->
-    <section class="gallary" id="gallary">
+    <!-- <section class="gallary" id="gallary">
         <div class="gallary__wrap">
             <div class="header--line">
                 <span>ЖИВОПИСЬ - ОНА ТАКАЯ</span>
-            </div>
+            </div> -->
             
             <!--Масляная живопись-->
-            <img class="gallary__ellips-one" src="../icons/Ellipse-one.svg" alt="">
+            <!-- <img class="gallary__ellips-one" src="../icons/Ellipse-one.svg" alt="">
             <div class="gallary__subtitle-one">
                 <p>Масляная живопись на холсте</p>
-            </div>
-            <div class="gallary__item-one">
+            </div> -->
+            <!-- <div class="gallary__item-one">
                 <img src="../images/photo_2022-11-29_09-05-07 1.jpg" alt="">
                 <img src="../images/photo_2022-11-29_09-04-51 1.jpg" alt="">
                 <img src="../images/photo_2022-11-29_09-04-46 1.jpg" alt="">
@@ -86,20 +93,17 @@
                 <img src="../images/photo_2022-11-29_09-04-59 1.jpg" alt="">
                 <img src="../images/photo_2022-11-29_09-05-05 1.jpg" alt="">
                 <img src="../images/photo_2022-11-29_09-08-00 1.jpg" alt="">
-            </div>
+            </div> -->
 
             <!--Авторская серия персонажей-->
-            <div class="gallary__wrap">
+            <!-- <div class="gallary__wrap">
                 <div class="gallary__item-two">
-                    <!-- <svg width="417" height="130" viewBox="0 0 417 130" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M160.287 2.01153C167.795 1.29582 420.07 33.9868 414.922 75.7434C414.922 110.93 322.486 128 208.461 128C94.4358 128 2 110.93 2 75.7434C2 44.4751 151.528 20.6231 170.923 18.4757C190.318 16.3283 200.328 16.3283 220.974 16.3283" stroke="#83C2D5" stroke-width="3"/>
-                        </svg> -->
-                        
+                                         
                     <img class="gallary__ellips-two" src="../icons/Ellipse-two.svg" alt="">
                     <div class="gallary__subtitle-two">
                         <p>Авторская серия персонажей в <br> технике масляная живопись</p>
                     </div>
-                    <div class="gallary__item-two-images">
+                    <!-- <div class="gallary__item-two-images">
                         <img src="../images/photo_2022-11-29_09-05-32 1.jpg" alt="">
                         <img src="../images/photo_2022-11-29_09-05-25 1.jpg" alt="">
                         <img src="../images/photo_2022-11-29_09-05-26 1.jpg" alt="">
@@ -108,17 +112,17 @@
                         <img src="../images/photo_2022-11-29_09-05-24 1.jpg" alt="">
                         <img src="../images/photo_2022-11-29_09-05-30 1.jpg" alt="">
                         <img src="../images/photo_2022-11-29_09-05-31 1.jpg" alt="">
-                    </div>  
+                    </div>   -->
                 </div>        
-            </div> 
+            </div>  -->
             <!--Работы в стиле импрессионизм-->
-            <div class="gallary__item-three">
+            <!-- <div class="gallary__item-three">
                 <div class="gallary__wrap">
                     <img class="gallary__ellips-three" src="../icons/Ellipse-three.svg" alt="">
                     <div class="gallary__subtitle-three">
                         <p>Работы в стиле импрессионизм<br> смешанная техника</p>
                     </div>
-                    <div class="gallary__item-three-images">
+                    <!-- <div class="gallary__item-three-images">
                         <img src="../images/photo_2022-11-29_09-05-14 1 (1).jpg" alt="">
                         <img src="../images/photo_2022-11-29_09-05-16 1.jpg" alt="">
                         <img src="../images/photo_2022-11-29_09-05-18 1.jpg" alt="">
@@ -126,13 +130,13 @@
                         <img src="../images/photo_2022-11-29_09-05-21 1.jpg" alt="">
                         <img src="../images/photo_2022-11-29_09-08-56 1.jpg" alt="">
                         <img src="../images/photo_2022-11-29_09-05-23 1.jpg" alt="">
-                    </div> 
+                    </div>  -->
                 </div>                
-            </div>  
+            </div>   -->
         </div>   
     </section>
 
-    <section class="location" id="location">
+    <!-- <section class="location" id="location">
         <div class="header--line">
             <span>где найти вдохновение</span>
         </div>
@@ -161,7 +165,7 @@
                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7bf3dc5ba36fe83866f45ccd90815dcaa5906c6788284faa28fc96d8bc386268&amp;source=constructor" width="696" height="500" frameborder="0"></iframe>          
             </div> 
         </div>
-    </section>
+    </section> -->
 
     <!--footer-->
     <footer class="footer" id="footer">

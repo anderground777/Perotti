@@ -10,6 +10,17 @@
 
 @media screen and (max-width: 1200px) {
     /* экраны 1200px и меньше */
+    .block2__description {
+        left: 630px;
+        padding-right: 30px;
+    }
+
+    .block4__description {
+        left: 490px;
+        padding-right: 30px;
+    }
+    
+    
     .button-page-life {
         margin-left: 50px;
     }
@@ -19,6 +30,16 @@
     }
     .location__left {
         margin-left: 30px;
+    }
+
+    .item-form {
+        min-width: 180px;
+        margin-right: 30px;
+    }
+    .button-send__action {
+        width: 12rem;
+        font-size: 1em;
+        padding: 18px 30px;
     }
 }
 
@@ -235,10 +256,10 @@
         height: 80%;
     }
 
-    .item-form {
+    /* .item-form {
         min-width: 180px;
         margin-right: 30px;
-    }
+    } */
 
     .button-send__action {
         padding: 18px 18px;
@@ -303,7 +324,7 @@
     
     .button-send__action {
         margin-bottom: 50px;
-        width: 280px;
+        width: 17rem;
         font-size: 1em;
     }    
 }

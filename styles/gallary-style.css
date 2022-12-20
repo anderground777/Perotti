@@ -214,6 +214,10 @@ a {
     fill: #D6AA45;    
   }
 
+.header__toggle {
+  display: none;
+}  
+
     /* Банер */
 .mainbanner {
     background-image: url('../images/banner.jpg');
