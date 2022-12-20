@@ -1,11 +1,15 @@
-@media screen and (max-width: 1280px) {
-  /* экраны 1024px и меньше */
+
+
+@media screen and (max-width: 1200px) {
+  /* экраны 1200px и меньше */
 
   .art-club__line span {
       font-size: 2em;
   }
 
-  .art-club {
+  
+
+  /* .art-club {
       flex-direction: column;
       margin-top: 0;
   }
@@ -22,7 +26,7 @@
 
   .art-club_btn_wrapper {
       margin: 0 auto;
-  }
+  } */
 
   /*.button-line {
       width: 380px;
@@ -30,17 +34,34 @@
       
   }*/
 
-  .button__nonaction-blur {
-      /* padding: 25px 0; */
+  /* .button__nonaction-blur {
+      
       border-radius: 2em;
       font-size: 1.5em;
-  }
+  } */
 }
 
 @media screen and (max-width: 920px) {
   /* экраны 920px-481px */
  
-  .page-life__img {
+  .art-club__content {
+    flex-direction: column;
+  }
+
+  .art-club__title2 {
+    text-align: center;
+    align-content: center;
+  }
+
+  .art-club__img {
+    max-width: 450px;    
+  }
+
+  .button-artclub {
+    margin: 0 auto;
+  }
+
+  /* .page-life__img {
       max-width: 320px;
       height: auto;
   }
@@ -94,12 +115,12 @@
     margin-left: -180px;
     overflow: hidden;
     text-align: center;
-  }
+  } */
 
-  .topics__content {
+  /* .topics__content {
     display: grid;
     flex-wrap: wrap;
-    /*grid-template-columns: 1fr;*/
+    
     grid-gap: 60px;
     margin-top: -90px;
   }
@@ -153,17 +174,15 @@
     position: relative;
     margin-top: -230px;
     margin-left: 230px;
-  }
+  } */
 
-  .master-class {
+  /* .master-class {
     display: grid;
     flex-wrap: wrap;
-    /*grid-template-columns: 1fr;
-    justify-content: space-between;
-    margin-left: 30px;*/
-  }
+    
+  } */
 
-  .master-class__line {
+  /* .master-class__line {
     margin-left: -180px;
     margin-right: -500px;
     overflow: hidden;
@@ -188,13 +207,11 @@
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
-  }
+  } */
 
-  .gallery {
+  /* .gallery {
     display: grid;
     flex-wrap: wrap;
-    /*grid-template-columns: 1fr;
-    justify-content: space-between;*/
     margin-left: -150px;
   }
 
@@ -225,14 +242,26 @@
 
   .gallery__button {
     margin-left: 890px;
-  }
+  } */
 }
 
 @media screen and (max-width: 560px) {
   /* экраны 560px и меньше */
  
-  .page-life__img {
+  .art-club__subtitle {
+    font-size: 1.3em ;
+  }
+
+  .art-club__img {
+    max-width: 310px;
+  }
+
+
+
+
+  /* .page-life__img {
       max-width: 320px;
+      min-width: 0;
       height: auto;
   }
 
@@ -289,12 +318,12 @@
     margin-left: -180px;
     overflow: hidden;
     text-align: center;
-  }
+  } */
 
-  .topics__content {
+  /* .topics__content {
     display: grid;
     flex-wrap: wrap;
-    /*grid-template-columns: 1fr;*/
+   
     grid-gap: 60px;
     margin-top: -90px;
   }
@@ -347,13 +376,11 @@
     position: relative;
     margin-top: -230px;
     margin-left: 60px;
-  }
+  } */
 
-  .master-class {
+  /* .master-class {
     display: grid;
     flex-wrap: wrap;
-    /*grid-template-columns: 1fr;
-    justify-content: space-between;*/
     margin-left: 20px;
   }
 
@@ -380,7 +407,7 @@
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
-  }
+  } */
 
   .gallery {
     display: grid;

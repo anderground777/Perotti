@@ -275,9 +275,14 @@
         width: 12rem;
         font-size: 0.8em;        
     }
-
+    .page-form {
+        width: 70%;
+    }
     .form-container h2 {
         font-size: 2em;
+    }
+    .button-push {
+        width: 50%;
     }
     
 }
@@ -348,6 +353,14 @@
     .input-group label {
         font-size: 1em;
     }
+
+    .page-form {
+        width: 80%;
+    }
+
+    .button-push {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 390px) {
 
@@ -359,7 +372,5 @@
         /* margin-left: 54px; */
         /* margin-top: 40px; */
     }
-    .form-container h2 {
-        font-size: 1em;
-    }
+    
 }    

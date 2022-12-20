@@ -11,47 +11,53 @@
 
     <!-- подключаем стили -->
     <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/hamburgers.css">
     <link rel="stylesheet" href="../styles/courses-style.css">
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/button.css">
     <link rel="stylesheet" href="../styles/style__gallery.css">
-    <!-- <link rel="stylesheet" href="../styles/media.css"> -->
+    <link rel="stylesheet" href="../styles/media.css">
     <link rel="stylesheet" href="../styles/courses-media.css">
 
 </head> 
 <body class="body">
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
+            <button class="header__toggle hamburger hamburger--squeeze" type="button" onclick="this.classList.toggle('is-active')">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button>
             <nav class="menu">
                 <div class="top-menu">
                     <div class="top-menu__left">
                         <ul class="menu-left">
-                            <li class="menu-left__item"><a href="../index.html">Главная</a></li>
+                            <li class="menu-left__item"><a href="../index.html#aboutme">Обо мне</a></li>
                             <li class="menu-left__item"><a href="../pages/gallary.html">Галерея</a></li>
-                            <li class="menu-left__item"><a href="../pages/courses.html">Арт-клуб</a></li>
+                            <li class="menu-left__item"><a href="../pages/courses.html">Арт - клуб</a></li>
                             <li class="menu-left__item"><a href="https://www.perottischool.ru/" target="_blank">Школа</a></li>
-                            <li class="menu-left__item"><a href="../pages/courses.html#location">Контакты</a></li>
+                            <li class="menu-left__item"><a href="#location">Контакты</a></li>
                         </ul>
                     </div>
                     <div class="top-menu__right">
                         <div class="menu-right telegram">
-                            <a href="https://telegram.org" class="tooltip-telegram"> <img src="../images/telegram.svg" alt="telegram"></a>
+                            <a href="https://telegram.org" class="tooltip-telegram" target="_blank"> <img src="../images/telegram.svg" alt=""></a>
                             <span class="icon">Telegram</span>
                         </div>
                         <div class="menu-right youtube">
-                            <a href="https://www.youtube.com/@perottischool" class="tooltip-youtube"> <img src="../images/youtube.svg" alt="youtube"></a>
+                            <a href="https://www.youtube.com/@perottischool" class="tooltip-youtube" target="_blank"> <img src="../images/youtube.svg" alt=""></a>
                             <span class="icon">YouTube</span>
                         </div>
                         <div class="menu-right instagram">
-                            <a href="https://www.instagram.com" class="tooltip-instagram"> <img src="../images/instagram.svg" alt="instagram"></a>
+                            <a href="https://www.instagram.com" class="tooltip-instagram" target="_blank"> <img src="../images/instagram.svg" alt=""></a>
                             <span class="icon">Instagram</span>
                         </div>
                     </div>
                 </div>
             </nav>            
         </div>    
-    </header> -->
-    <section class="mainbanner">
+    </header>
+    <!-- <section class="mainbanner">
         <div class="mainbanner__wrap container">
             <img src="../images/logo.png" alt="Логотип" class="mainbanner__logo">
             <img src="../images/banner.png" alt="Светлана Перотти" class="banner">
@@ -61,7 +67,7 @@
                 <p class="mainbanner__text">в каждом из нас живет художник <br> не верите?</p>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="art-club">        
         <div class="header--line">
             <span>АРТ-КЛУБ</span>
@@ -74,19 +80,26 @@
                 <img src="../images/risunok1 1.png" alt="art-club" class="art-club__img">
                 <div class="title-wrapper">
                     <p class="art-club__title2">Об Арт-клубе</h3>
-                    <div class="art-club_btn_wrapper">
+                    <!-- <div class="art-club_btn_wrapper"> -->
                     <p class="art-club__subtitle2">В Арт-клубе Светланы Перотти мы говорим об истории изобразительного искусства, 
                         о том, где черпать вдохновение, осваиваем законы живописи и рисунка, учимся экспериментировать, писать свободно и легко, 
                         развиваем творческую смелость и создаем выразительные картины в сочетании акварели и пастели.
                         <br>
                         <br>Изучая живописные законы, вы получаете систему знаний и навыков, а вместе с ними – свободу. Но самое важное, 
                         со Светой Перотти вы учитесь быть по-настоящему искренними в своем творчестве.</p>
-                        <div class="button-blur">
-                            <a href="https://www.perottischool.ru/courses/masterskaya-svetlany-perotti/" class="button__nonaction-blur" target="_blank">Узнать подробнее</a>
+
+                        <div class="button-line button-artclub">
+                            <a href="https://www.perottischool.ru/courses/masterskaya-svetlany-perotti" class="button__nonaction" target="_blank">Узнать подробнее</a>
+                            <span class="button__action"></span>
                         </div>
+                        
+                        
+                        <!-- <div class="button-blur">
+                            <a href="https://www.perottischool.ru/courses/masterskaya-svetlany-perotti/" class="button__nonaction-blur" target="_blank">Узнать подробнее</a>
+                        </div> -->
                     
                         
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
         </div>    
@@ -97,28 +110,38 @@
                     <span>ТЕМЫ АРТ-КЛУБА</span>
                 </div>
                 <div class="container">
-                    <div class="topics__subtitle">
-                        <p>Основы мастерства</p>
-                        <p>Цветочные сюжеты</p>
-                        <p>Природные пейзажи</p>
-                    </div>
-                        <div class="d-flex">
-                            <img src="../images/osnovi_masterstva.png" alt="topics" class="topics__img1">
-                            <img src="../images/cvetochnie_suzheti.png" alt="topics" class="topics__img2">
-                            <img src="../images/prirodnie_peizazhi_1.png" alt="topics" class="topics__img3">
-                        </div>    
-                        <p class="topics__text--left">Изучаем возможности смешанной техники. Основы теории цвета и композиции. 
-                            Смешиваем краски, создаем прозрачные подложки, подбираем самые разнообразные цвета и оттенки. прорабатываем детали. 
-                            Последовательность создания работы.
-                            <br>
-                            <br>Букеты цветов — яркие или нежные, но всегда эмоциональные и живые. Ищем выразительные цвета и композицию, 
-                            осваиваем тон и контрасты, учимся освещать букет солнечным светом и передавать жизнь.
-                        </p>
-                        <img src="../images/prirodnie_peizazhi_2.png" alt="topics" class="topics__img4">
-                        <p class="topics__text--right">Мы будем писать самые прекрасные уголки планеты. Рассвет или закат, солнечный полдень или дождливый день. 
-                            Здесь мы учимся передавать состояние природы, световоздушную среду, глубину пространства.</p>
                     
-                    <div class="topics__item">
+                        <div class="topics__block1 d-flex">
+                            <div class="topics__item1">
+                                <p>Основы мастерства</p>
+                                <img src="../images/osnovi_masterstva.png" alt="topics" class="topics__img1">
+                            </div>
+                            <div class="topics__item2 ">
+                                <p>Цветочные сюжеты</p>
+                                <img src="../images/cvetochnie_suzheti.png" alt="topics" class="topics__img2">
+                            </div>
+                            <div class="topics__item3">
+                                <p>Природные пейзажи</p>
+                                <img src="../images/prirodnie_peizazhi_1.png" alt="topics" class="topics__img3">
+                            </div>
+                        </div>
+                        <div class="topics__block2 d-flex">  
+                            <p class="topics__block2-txt">Изучаем возможности смешанной техники. Основы теории цвета и композиции. 
+                                Смешиваем краски, создаем прозрачные подложки, подбираем самые разнообразные цвета и оттенки. прорабатываем детали. 
+                                Последовательность создания работы.
+                                <br>
+                                <br>Букеты цветов — яркие или нежные, но всегда эмоциональные и живые. Ищем выразительные цвета и композицию, 
+                                осваиваем тон и контрасты, учимся освещать букет солнечным светом и передавать жизнь.
+                            </p>
+                            <div class="wrapper">
+                                <img src="../images/prirodnie_peizazhi_2.png" alt="topics" class="topics__img4">
+                                <p class="topics__block3">Мы будем писать самые прекрасные уголки планеты. Рассвет или закат, солнечный полдень или дождливый день. 
+                                    Здесь мы учимся передавать состояние природы, световоздушную среду, глубину пространства.</p>
+                            </div>        
+                        </div>
+                        
+                    
+                    <!-- <div class="topics__item">
                         <div class="topics__item1">
                             <img src="../images/morya_reki_okeani.png" alt="topics"  class="topics__img5">
                             <img src="../images/polygon1.png" alt="poligon1" class="topics__poligon1">
@@ -147,10 +170,10 @@
                                 <img src="../images/line3.svg" alt="topics" class="topics__line3">
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>    
         </section>
-        <section class="master-class">
+        <!-- <section class="master-class">
             <div class="header--line">
                 <span>Мастер-классы со Светланой 
                     <br>в школе живописи Перотти</span>
@@ -193,8 +216,8 @@
                         </div>
                     </div>
                 </div>
-        </section>
-        <section class="gallery">
+        </section> -->
+        <!-- <section class="gallery">
             <div class="header--line">
                 <span>ТВОРЧЕСТВО</span>
             </div>
@@ -246,37 +269,37 @@
                 <a href="../pages/gallary.html#gallary" class="button__nonaction-blur" target="_blank">Галерея работ</a>
             </div>
             
-        </section>
-    <section class="location" id="location">
-        <div class="header--line">
-            <span>где найти вдохновение</span>
-        </div>
-        <div class="container d-flex">
-            <div class="location__left">
-                <div class="location__text-item">
-                    <p class="location__head" >Школа Искусств Перотти на Динамо</p>
-                    <div class="wraper d-flex">
-                        <img src="../images/vector.svg" class="img--pointer" alt="pointer">
-                        <p class="location__text" >Москва, ул. Расковой, дом 16/18 (метро Белорусская/Динамо)</p>
-                    </div>    
-                </div>
-                <div class="location__text-item">
-                    <p class="location__head">Школа Искусств Перотти на Юго-Западе</p>
-                    <div class="wraper d-flex">
-                        <img src="../images/vector.svg"  class="img--pointer" alt="pointer">
-                        <p class="location__text">Москва, ул. Никулинская дом 6, корп. 3 (метро Юго-Западная)</p>
-                    </div>    
-                </div>
-                <div class="location__text-item">
-                    <p class="location__text">Оставьте заявку на обучение или можете продолжить знакомиться с нами</p>
-                </div>
-                <a href="" class="push__nonaction">Оставить заявку</a>
+        </section> -->
+        <section class="location" id="location">
+            <div class="header--line">
+                <span>где найти вдохновение</span>
             </div>
-            <div class="location__map">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7bf3dc5ba36fe83866f45ccd90815dcaa5906c6788284faa28fc96d8bc386268&amp;source=constructor" width="696" height="500" frameborder="0"></iframe>          
-            </div> 
-        </div>
-    </section>
+            <div class="container d-flex location-block">
+                <div class="location__left">
+                    <div class="location__text-item">
+                        <p class="location__head" >Школа Искусств Перотти на Динамо</p>
+                        <div class="wraper d-flex">
+                            <img src="../images/pointer.svg" class="img--pointer" alt="pointer">
+                            <p class="location__text" >Москва, ул. Расковой, дом 16/18 (метро Белорусская/Динамо)</p>
+                        </div>    
+                    </div>
+                    <div class="location__text-item">
+                        <p class="location__head">Школа Искусств Перотти на Юго-Западе</p>
+                        <div class="wraper d-flex">
+                            <img src="../images/pointer.svg"  class="img--pointer" alt="pointer">
+                            <p class="location__text">Москва, ул. Никулинская дом 6, корп. 3 (метро Юго-Западная)</p>
+                        </div>    
+                    </div>
+                    <div class="location__text-item">
+                        <p class="location__text">Оставьте заявку на обучение или можете продолжить знакомиться с нами</p>
+                    </div>
+                    <a href="pages/form.html" class="push__nonaction">Оставить заявку</a>
+                </div>
+                <div class="location__map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7bf3dc5ba36fe83866f45ccd90815dcaa5906c6788284faa28fc96d8bc386268&amp;source=constructor" width="696" height="500" frameborder="0" class="map"></iframe>          
+                </div> 
+            </div>
+        </section> 
     <footer class="footer" id="footer">
         <div class="footer-container">
             <div class="footer__item">
