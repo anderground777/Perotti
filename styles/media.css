@@ -140,6 +140,14 @@
         line-height: 150%;
     }
 
+    .border--right {
+        border-right: none;
+    }
+
+    .border--left {
+        border-left: none;
+    }
+
     .button-page-life {
         margin: 0 auto;
     }
