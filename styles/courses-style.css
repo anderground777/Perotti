@@ -178,12 +178,35 @@
   top: -90px;
 }
 
-.topics__block3 {  
+.topics__item5 {
+ 
+}
+
+.topics__item5-txt {  
   position: relative;
-  max-width: 418px;
-  
+  max-width: 418px;  
   top: -90px;
 }
+
+.topics__block3 {
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.topics__img5::after {
+    
+    border-right: 10px solid rgb(255, 0, 119); /* Добавляем треугольник */
+    z-index: 10;
+}
+
+.topics__item6 {
+  
+}
+
+.topics__block5 {
+  gap: 10px;
+}
+
 
 
 
@@ -438,29 +461,5 @@
   color: #FFFFFF;
 }
 
-/* location */
 
-.img--pointer {
-  margin-right: 22px;
-}
-
-.location {
- margin-top: 50px;
-}
-
-.location__head {
-  font-weight: 700;
-}
-
-.location__left {
-  display: grid;
-  margin-left: 105px;
-  margin-right: 26px;
-}
-
-.location__text-item:nth-child(2),
-.location__text-item:first-child {
-  border-bottom: 2px solid var(--color_1);
-  margin-bottom: 30px;
-}
 
