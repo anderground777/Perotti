@@ -193,20 +193,58 @@
   margin-bottom: 20px;
 }
 
-.topics__img5::after {
-    
-    border-right: 10px solid rgb(255, 0, 119); /* Добавляем треугольник */
-    z-index: 10;
-}
-
-.topics__item6 {
-  
-}
-
 .topics__block5 {
   gap: 10px;
 }
 
+/* master-class */
+
+.master-class__item {
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.master-class__item1 {
+  margin-left: 144px;
+}
+.master-class__item2 {
+  margin-right: 144px;
+}
+
+.master-class__text {
+  max-width: 563px;
+  min-width: 300px;
+  text-align: justify;
+}
+
+.master-class__title {
+  font-family: PT Sans, Sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 150%;
+  margin-top: 0;
+}
+
+/* .master-class__btn1 {
+  left: 60%;
+  position: fixed;
+  margin-top: 65px;  
+}
+
+.master-class__btn2 {
+  left: 9%;
+  margin-top: 65px;
+} */
+
+.master-class__img {
+  max-width: 418px;
+  min-width: 350px;
+  
+  max-height: 416px;
+  
+}
 
 
 
