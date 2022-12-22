@@ -6,15 +6,24 @@
   .art-club__line span {
       font-size: 2em;
   }
-  
-  
-
-  
 }
 
 @media screen and (max-width: 920px) {
   /* экраны 920px-481px */
- 
+  .mainbanner__wrap {
+    display: block;
+  } 
+
+  .mainbanner__head {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mainbanner__text {
+    margin: 50px auto 0;
+    max-width: 300px;
+  }
+
   .art-club__content {
     flex-direction: column;
   }
@@ -46,9 +55,11 @@
     max-width: 400px;
     padding: 0 20px;
   }
-
+  .topics__img3 {
+    max-width: 418px;
+  }
   .topics__img4 {
-    max-width: 400px;
+    max-width: 418px;
     top: 0;
   }
 
@@ -63,6 +74,11 @@
     align-items: center;
   }
 
+  .block3__item1 {
+    max-width: 418px;
+    padding: 0 20px;
+  }
+
   .topics__block4 {
     top: 0;
     flex-direction: column;
@@ -71,6 +87,7 @@
   }
   .block4__item1 {
     margin-top: 16px;
+    max-width: 418px;
   }
 
   .block3__item1::before,
@@ -93,6 +110,7 @@
     padding: 0 20px;
   }
 
+  
   .master-class__btn1,
   .master-class__btn2 {
     margin: auto;
@@ -103,13 +121,27 @@
 
 @media screen and (max-width: 560px) {
   /* экраны 560px и меньше */
- 
+  
+  .mainbanner {
+   height: 400px;
+  }
+
   .art-club__subtitle {
     font-size: 1.3em ;
   }
 
   .art-club__img {
     max-width: 310px;
+  }
+
+  .topics__img1,
+  .topics__img2,
+  .topics__img4,
+  .topics__img5,
+  .topics__img6,
+  .topics__img7,
+  .master-class__img {
+    max-width: 330px;
   }
 
 
