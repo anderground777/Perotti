@@ -33,12 +33,22 @@
     align-content: center;
   }
 
+  .art-club__subtitle2 {
+    font-size: 1.2em;
+    max-width: 500px;
+  }
+
   .art-club__img {
     max-width: 450px;    
   }
 
   .button-artclub {
     margin: 0 auto;
+  }
+  
+  .topics__subtitle {
+    font-size: 1.2em;
+    max-width: 418px;
   }
 
   .topics__block1 {
@@ -52,7 +62,7 @@
   }
 
   .block2__item1 {
-    max-width: 400px;
+    /* max-width: 400px; */
     padding: 0 20px;
   }
   .topics__img3 {
@@ -94,6 +104,10 @@
   .block4__item1::after,
   .block4__item2::after {
     display: none;
+  }
+
+  .master-class__subtitle {
+    font-size: 1.2em;
   }
 
   .master-class__item1 {

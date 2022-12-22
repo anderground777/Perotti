@@ -41,6 +41,8 @@
         font-size: 1em;
         padding: 18px 30px;
     }
+
+    
 }
 
 @media screen and (max-width: 1024px) {
@@ -137,7 +139,7 @@
 
     .page-life__paragraph {
         margin-bottom: 15px;
-        font-size: 1.3em;
+        font-size: 1.2em;
         line-height: 150%;
     }
 
@@ -193,7 +195,7 @@
     }
 
     .interview__text {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     .interview__block2 {
