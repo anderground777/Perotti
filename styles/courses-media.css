@@ -148,15 +148,20 @@
     max-width: 310px;
   }
 
+  .master-class__img {
+    max-width: 150px;
+  }
+
   .topics__img1,
   .topics__img2,
   .topics__img4,
   .topics__img5,
   .topics__img6,
-  .topics__img7,
-  .master-class__img {
+  .topics__img7 {
     max-width: 330px;
   }
+
+ 
 
 
 
