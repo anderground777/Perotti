@@ -5,7 +5,7 @@
   --color-white: #ffffff;
   --color-black: #111111;
   --color-gray: #E3E3E3;
-  --color-gray-dark: #7E7E7E;
+  --color-gray-dark: #a7a7a7;
 }
 
 *{
@@ -200,9 +200,9 @@ color: var(--color-black);
   z-index: 10;
 }
 
-.instagram:hover .icon,
-.instagram:hover .icon::before,
-.tooltip-instagram:hover {
+.whatsapp:hover .icon,
+.whatsapp:hover .icon::before,
+.tooltip-whatsapp:hover {
   background-color: var(--color_3);
   z-index: 10;
 }
