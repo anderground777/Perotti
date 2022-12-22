@@ -108,13 +108,17 @@
 
   .master-class__subtitle {
     font-size: 1.2em;
+    padding: 0 20px;
+  }
+
+  .master-class__title {
+    padding: 0 20px;
   }
 
   .master-class__item1 {
     flex-direction: column-reverse;
     margin-left: auto;
-    align-items: center;
-    padding: 0 20px;
+    align-items: center;    
   }
 
   .master-class__item2 {
@@ -140,6 +144,13 @@
    height: 400px;
   }
 
+  .mainbanner3__head {
+    font-size: 1.8em;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+
   .art-club__subtitle {
     font-size: 1.3em ;
   }
@@ -149,7 +160,8 @@
   }
 
   .master-class__img {
-    max-width: 150px;
+    display: block;
+    
   }
 
   .topics__img1,
@@ -157,7 +169,8 @@
   .topics__img4,
   .topics__img5,
   .topics__img6,
-  .topics__img7 {
+  .topics__img7,
+  .master-class__img {
     max-width: 330px;
   }
 
