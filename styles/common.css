@@ -330,7 +330,7 @@ color: var(--color-black);
   }
   
   .item-form {
-    min-width: 290px;
+    width: 80%;
   }
 
   /* форма обратной связи */

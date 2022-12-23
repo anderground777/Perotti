@@ -116,7 +116,7 @@
 
   .master-class__subtitle {
     font-size: 1.2em;
-    padding: 0 20px;
+    /* padding: 0 20px; */
   }
 
   .master-class__title {
@@ -126,7 +126,8 @@
   .master-class__item1 {
     flex-direction: column-reverse;
     margin-left: auto;
-    align-items: center;    
+    align-items: center;
+    padding: 0 20px;    
   }
 
   .master-class__item2 {
