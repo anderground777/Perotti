@@ -198,13 +198,12 @@
                     </div>
                 </div>
         </section>
-        <!-- <section class="gallery">
+        <section class="creation">
             <div class="header--line">
                 <span>ТВОРЧЕСТВО</span>
             </div>
             <p class="gallery__subtitle">Результаты работ от преподавания!</p>
-            <div class="gallery__photo">
-               
+            <div class="gallery__photo">               
                 <div class="gallery">
                     <div class="gallery__flex">
                     <ul class="gallery-rewiew">
@@ -243,14 +242,81 @@
                         </li>
                     </ul>
                     </div>
+                    <div class="button-blur gallery__button">
+                        <a href="../pages/gallary.html#gallary" class="button__nonaction-blur" target="_blank">Галерея работ</a>
+                    </div>    
+
                 </div>
+                
 
             </div>
+            
+            
+            
+        
+            
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="../images/img_3.webp" style="width:100%">
+                <!-- <div class="text">Caption Text</div> -->
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="../images/img_2.webp" style="width:100%" >
+                <!-- <div class="text">Caption Two</div> -->
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="../images/img_1.webp" style="width:100%" >
+                <!-- <div class="text">Caption Three</div> -->
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="../images/img_5.webp" style="width:100%" >
+                <!-- <div class="text">Caption Text</div> -->
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="../images/img_6.webp" style="width:100%" >
+                <!-- <div class="text">Caption Two</div> -->
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="../images/img_7.webp" style="width:100%" >
+                <!-- <div class="text">Caption Three</div> -->
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="../images/img_8.webp" style="width:100%" >
+                <!-- <div class="text">Caption Three</div> -->
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+                <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span> 
+                <span class="dot" onclick="currentSlide(5)"></span> 
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span> 
+            </div>  
             <div class="button-blur gallery__button">
                 <a href="../pages/gallary.html#gallary" class="button__nonaction-blur" target="_blank">Галерея работ</a>
             </div>
-            
-        </section> -->
+        </div>               
+        </section>
         <section class="location" id="location">
             <div class="header--line">
                 <span>где найти вдохновение</span>
@@ -316,5 +382,34 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
 </body>
 </html>
