@@ -210,27 +210,30 @@
   max-width: 418px;
   min-width: 300px;
   line-height: 1.5em;
+  height: 222px;
+  border-bottom: 2px solid var(--color_1);
 }
 
 .block4__item1 {
   max-width: 283px;
   min-width: 283px;
-  line-height: 1.5em; 
+  line-height: 1.5em;
+  border-bottom: 2px solid var(--color_1); 
 }
 
-.block4__item1::after {
+/* .block4__item1::after {
   content: '';
   height: 2px;
   background-color: var(--color_1);
   display: block;
-}
+} */
 
-.block4__item2::after {
+/* .block4__item2::after {
   content: '';
   height: 2px;
   background-color: var(--color_1);
   display: block;
-}
+} */
 
 
 /* master-class */
